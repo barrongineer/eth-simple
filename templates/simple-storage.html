@@ -1,0 +1,20 @@
+<div class="card" style="margin-top: 20px;">
+    <div class="card-body">
+        <form method="post" action="/simple-storage">
+            <div class="form-group">
+                <label for="storedData-input">Stored Data</label>
+                <input type="number" class="form-control" id="storedData-input" name="storedData"
+                       aria-describedby="emailHelp"
+                       placeholder="Enter a number">
+            </div>
+
+            <input type="hidden" name="authenticity_token" value="<%= authenticity_token %>"/>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div style="font-size: 20em; text-align: center;">
+    <%= storedData %>
+</div>

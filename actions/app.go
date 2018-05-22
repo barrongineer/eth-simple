@@ -50,6 +50,10 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		simpleStorage := app.Group("/simple-storage")
+		simpleStorage.GET("/", SimpleStorageGetHandler)
+		simpleStorage.POST("/", SimpleStoragePutHandler)
+
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 
