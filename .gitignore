@@ -1,6 +1,7 @@
 vendor/
 **/*.log
 **/*.sqlite
+.idea/
 bin/
 tmp/
 node_modules/
