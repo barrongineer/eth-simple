@@ -1,0 +1,12 @@
+body {
+  padding-top: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.storedData-txt {
+  font-size: 20em;
+  text-align: center;
+}
